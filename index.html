@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Sales Data Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .table-container {
+      max-width: 1000px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .scroll-table {
+      max-height: 350px; /* fits 7 rows at 50px each */
+      overflow-y: auto;
+      display: block;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    thead {
+      background-color: #004080;
+      color: #fff;
+      position: sticky;
+      top: 0;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tfoot {
+      background-color: #e8e8e8;
+      font-weight: bold;
+    }
+
+    tfoot td {
+      border-top: 2px solid #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Employee Sales Performance</h1>
+
+  <div class="table-container">
+    <div class="scroll-table" role="region" aria-labelledby="caption" tabindex="0">
+      <table aria-describedby="caption">
+        <caption id="caption" style="caption-side: top; text-align: left; padding: 10px;">
+          Table shows monthly sales data for employees.
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Region</th>
+            <th scope="col">Month</th>
+            <th scope="col">Sales</th>
+            <th scope="col">Quota</th>
+            <th scope="col">Met Quota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>101</td><td>Alice Smith</td><td>North</td><td>January</td><td>$12,000</td><td>$10,000</td><td>Yes</td></tr>
+          <tr><td>102</td><td>Bob Johnson</td><td>West</td><td>January</td><td>$9,500</td><td>$10,000</td><td>No</td></tr>
+          <tr><td>103</td><td>Clara Lee</td><td>South</td><td>January</td><td>$11,300</td><td>$10,000</td><td>Yes</td></tr>
+          <tr><td>104</td><td>David Kim</td><td>East</td><td>January</td><td>$10,700</td><td>$10,000</td><td>Yes</td></tr>
+          <tr><td>105</td><td>Eva Chen</td><td>North</td><td>January</td><td>$8,900</td><td>$10,000</td><td>No</td></tr>
+          <tr><td>106</td><td>Frank Moore</td><td>South</td><td>January</td><td>$10,000</td><td>$10,000</td><td>Yes</td></tr>
+          <tr><td>107</td><td>Grace Lee</td><td>West</td><td>January</td><td>$9,200</td><td>$10,000</td><td>No</td></tr>
+          <tr><td>108</td><td>Henry Ochoa</td><td>East</td><td>January</td><td>$13,400</td><td>$10,000</td><td>Yes</td></tr>
+          <tr><td>109</td><td>Ivy Clark</td><td>North</td><td>January</td><td>$7,800</td><td>$10,000</td><td>No</td></tr>
+          <tr><td>110</td><td>Jake White</td><td>South</td><td>January</td><td>$10,500</td><td>$10,000</td><td>Yes</td></tr>
+          <tr><td>111</td><td>Karen Black</td><td>West</td><td>January</td><td>$9,600</td><td>$10,000</td><td>No</td></tr>
+          <tr><td>112</td><td>Leo Brown</td><td>East</td><td>January</td><td>$12,800</td><td>$10,000</td><td>Yes</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total</td>
+            <td>$126,700</td>
+            <td>—</td>
+            <td>7 / 12 met quota</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
